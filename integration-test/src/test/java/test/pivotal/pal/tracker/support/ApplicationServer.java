@@ -34,7 +34,6 @@ public class ApplicationServer {
 
     public void startWithDatabaseName(String dbName) throws IOException, InterruptedException {
         String dbUrl = "jdbc:mysql://localhost:3306/" + dbName + "?useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false";
-
         start(envMapBuilder()
             .put("SPRING_DATASOURCE_URL", dbUrl)
             .put("EUREKA_CLIENT_ENABLED", "false")
