@@ -1,9 +1,10 @@
 package io.pivotal.pal.tracker.backlog;
 
-import org.springframework.web.client.RestOperations;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.client.RestOperations;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
